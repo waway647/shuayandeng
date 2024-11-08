@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Homepage | Shuay Andeng</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <style>
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <header>
+
+        <div class="above-header">
+
+        <a href="index.html" class="logo">
+        <img src="images/SA_logo.png" alt="Logo">
+        </a>
+
+        <div class="left-header" role="">
+            <div id="left-header">
+                <div class="left-header-wrapper">
+                    <div class="left-header-wrapper-flex">  
+                            <div class="left-header-col">
+                                <nav>
+                                <ul>        
+                                    <li><a href="webpages/shoppingbag.html">BAG <span class="cart-count">0</span></a></li>
+                                    <li><a href="webpages/account.html" id="login">Login</a></li>
+                                </ul>
+                                </nav>
+                            </div>
+                    </div>
+                </div>	    
+            </div>
+        </div>
+
+        <form>
+        <div class="app-search" class="app-search utility-item desktop-only">
+            <input type="search" name="q" value="" aria-label="Search" class="header-bar__search-input" placeholder="SEARCH">
+        </form>
+        </div>
+        
+    </div>
+
+    </header>
+        
+
+
+      <nav>
+        <div class="nav-links">
+        <ul>
+          <li><a href="webpages/sa.html">SA</a></li>
+          <li><a href="webpages/newarrivals.html">New Arrivals</a></li>
+          <li><a href="webpages/madebysa.html">Made By SA</a></li>   
+          <li><a href="webpages/categories.html">Categories</a></li>
+          <li><a href="webpages/onsale.html">On Sale</a></li>
+        </ul>
+        </div>
+      </nav>
+</div>
+
+<div class="container-image">
+    <!-- Slider main container -->
+<div class="swiper">
+<!-- Additional required wrapper -->
+<div class="swiper-wrapper">
+  <!-- Slides -->
+  <div class="swiper-slide"><img src="images/secondhand poster.png" alt=""></div>
+  <div class="swiper-slide"><img src="images/originals coming soon.png" alt=""></div>
+  <div class="swiper-slide"><img src="images/divergent series sale.png" alt=""></div>
+</div>
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+        speed: 1000,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false
+        },
+loop: true,
+
+});
+
+document.querySelector('.start-autoplay').addEventListener('click', function() {
+  // Enable autoplay and start the swiper
+  mySwiper.params.autoplay.enabled = true;
+  mySwiper.autoplay.start();
+});
+
+</script>
+
+
+<footer class="app-footer" role="contentinfo">
+    <div id="footer-upper">
+        <div class="wrapper">
+            <div class="flex">  
+                    <div class="footer-col">
+                        <nav>
+                        <ul>        
+                            <li><a href="webpages/contact.html">Contact</a></li>
+                            <li><a href="webpages/customerservice.html">Customer Service</a></li>
+                            <li><a href="webpages/ordering&delivering.html">Ordering & Delivering</a></li>
+                            <li><a href="https://www.instagram.com/sa_store_cebzam/">Instagram</a></li>
+                        </ul>
+                        </nav>
+                    </div>
+            </div>
+        </div>	    
+    </div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
